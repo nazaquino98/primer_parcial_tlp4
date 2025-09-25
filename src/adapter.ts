@@ -1,4 +1,4 @@
-export class InventarioViejo {
+class InventarioViejo {
     private items: { nombre: string; tipo: string; estado: string }[] = [];
 
     addItem(nombre: string, tipo: string, estado: string): void {
@@ -10,7 +10,7 @@ export class InventarioViejo {
     }
 }
 
-export class AdaptadorInventario {
+class AdaptadorInventario {
     constructor(private inventarioViejo: InventarioViejo) { }
 
     agregarEquipo(nombre: string, tipo: string, estado: string): void {
